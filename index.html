@@ -243,13 +243,12 @@ footer a:hover{color:var(--accent)}
       <div class="row-when">Mar 2023 – Present</div>
       <div>
         <h3>Senior Member of Technical Staff · Oracle, Exadata/Exascale Storage</h3>
-        <p>Lead design and optimization of the I/O path of Oracle's cloud-scale block storage: a Linux block driver bridging the kernel block layer with the distributed storage backend behind Oracle's cloud database offerings.</p>
+        <p>Design and optimization of the I/O path of Oracle's cloud-scale block storage: a Linux block driver bridging the kernel block layer with the distributed storage backend behind Oracle's cloud database offerings.</p>
         <ul>
-          <li>Increased storage throughput by 55% with Parallel Lock, a low-contention locking mechanism that replaced traditional locks on the hot I/O path and removed a key scalability bottleneck.</li>
-          <li>Cut per-volume memory usage by 35% by restructuring the I/O path to shrink per-I/O descriptors inflated by large protocol data units, with no loss of performance or observability.</li>
+          <li>Increased our driver throughput by 55% with Parallel Lock, a low-contention locking mechanism that replaced traditional locks on the hot IO path and removed a key scalability bottleneck.</li>
+          <li>Cut memory usage by 35% by restructuring the IO path to shrink per-IO descriptors, with no loss of performance or observability.</li>
           <li>Raised RDMA read coverage to ~95% by diagnosing and fixing defects across the RDMA I/O path, improving both latency and throughput.</li>
           <li>Reduced tail latency of the elastic memory subsystem under dynamic workloads by eliminating cold-start behavior.</li>
-          <li>Own kernel stability for the driver, diagnosing synchronization bugs and kernel panics through crash-dump and source-level analysis.</li>
         </ul>
       </div>
     </div>
@@ -335,7 +334,7 @@ footer a:hover{color:var(--accent)}
       </div>
     </div>
     <div class="row">
-      <div class="row-when">2017</div>
+      <div class="row-when">2016</div>
       <div>
         <h3>B.Sc. &amp; M.Sc., Computer Engineering · Iran University of Science and Technology, Tehran</h3>
         <p>M.Sc. thesis: design and implementation of a dynamic virtual machine scheduling mechanism for elasticity in cloud computing environments.</p>
@@ -376,8 +375,8 @@ footer a:hover{color:var(--accent)}
   <div class="wrap">
     <h2>Skills</h2>
     <div class="skill-line"><div class="k">Kernel &amp; I/O</div><div class="v">Linux block layer, device drivers, RDMA, synchronization &amp; concurrency, crash analysis</div></div>
-    <div class="skill-line"><div class="k">Performance</div><div class="v">eBPF, perf, flamegraphs, discrete-event simulation, benchmark design, memory-efficiency optimization</div></div>
-    <div class="skill-line"><div class="k">Languages</div><div class="v">C, C++, Rust, Python</div></div>
+    <div class="skill-line"><div class="k">Performance</div><div class="v">eBPF, perf, flamegraphs, discrete-event simulation, benchmark design</div></div>
+    <div class="skill-line"><div class="k">Languages</div><div class="v">C, C++, Python</div></div>
   </div>
 </section>
 
