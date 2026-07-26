@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<!-- saved from url=(0031)https://showanasyabi.github.io/ -->
+<!-- saved from url=(0041)https://showanasyabi.github.io/#education -->
 <html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -126,9 +126,9 @@ footer a:hover{color:var(--accent)}
     <a class="brand" href="https://showanasyabi.github.io/#top">Showan Asyabi</a>
     <div class="nav-links">
       <a href="https://showanasyabi.github.io/#about">About</a>
+      <a href="https://showanasyabi.github.io/#experience">Experience</a>
       <a href="https://showanasyabi.github.io/#research">Research</a>
       <a href="https://showanasyabi.github.io/#publications">Publications</a>
-      <a href="https://showanasyabi.github.io/#experience">Experience</a>
       <a href="https://showanasyabi.github.io/#talks">Talks</a>
       <a href="https://showanasyabi.github.io/#education">Education</a>
       <a href="https://showanasyabi.github.io/resume.pdf">Resume</a>
@@ -140,9 +140,9 @@ footer a:hover{color:var(--accent)}
   <div class="wrap">
     <div class="kicker">Systems · Performance · Resource Efficiency</div>
     <h1>Showan Asyabi</h1>
-    <p class="lede">For a decade I've worked on one problem in different costumes: <em>how to get more from expensive hardware without sacrificing quality of service</em>. CPU and VM schedulers, memory-efficient key-value stores, and now the IO path of the cloud-scale block storage behind Oracle Exadata.</p>
+    <p class="lede">For a decade I've worked on one problem in different costumes: <em>how to get more from expensive hardware without sacrificing quality of service</em>. CPU and VM schedulers, memory-efficient key-value stores, and now the I/O path of the cloud-scale block storage behind Oracle Exadata.</p>
     <div class="header-links">
-      <a class="primary" href="https://showanasyabi.github.io/resume.pdf">Resume</a>
+      <a class="primary" href="https://showanasyabi.github.io/resume.pdf">Download Resume</a>
       <span class="sep">·</span>
       <a href="mailto:showan.asyabi@gmail.com">showan.asyabi@gmail.com</a>
       <span class="sep">·</span>
@@ -156,12 +156,53 @@ footer a:hover{color:var(--accent)}
   <div class="wrap">
     <h2>About</h2>
     <div class="about-flex">
-      <img class="portrait" src="showan.jpeg" alt="Portrait of Showan Asyabi">
+      <img class="portrait" src="./Showan Asyabi_files/showan.jpeg" alt="Portrait of Showan Asyabi">
       <div class="about-text">
         <p>I'm a Senior Member of Technical Staff at Oracle, working on the I/O path of the cloud-scale block storage behind Exadata. My work focuses on improving memory efficiency, throughput, and tail latency by tracing performance problems to their root cause. Sometimes the fix is a careful patch; sometimes it means rethinking how we do I/O.</p>
         <p>I completed my Ph.D. in Computer Science at Boston University in 2023, advised by Professor <a href="http://azer.bestavros.net/">Azer Bestavros</a>, with a thesis on <em>resource-efficient, performant in-memory key-value stores for at-scale datacenters</em>.</p>
         <p class="interest-line"><b>Interests</b>: AI-stack resource efficiency (inference routing, GPUs, memory) · key-value stores &amp; caching · operating systems &amp; scheduling · stream processing</p>
         <p class="offline">When I'm not working, I'm traveling, hunting down Boston's best restaurants, or playing whatever sport is in season.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="experience">
+  <div class="wrap">
+    <h2>Experience</h2>
+
+    <div class="row">
+      <div class="row-when">Mar 2023 – Present</div>
+      <div>
+        <h3>Senior Member of Technical Staff · Oracle, Exadata/Exascale Storage</h3>
+        <p>A Linux block driver bridging the kernel block layer with the distributed storage backend behind Oracle's cloud database offerings.</p>
+        <ul>
+          <li>Increased our driver throughput by 55% with Parallel Lock, a low-contention locking mechanism that replaced traditional locks on the hot I/O path and removed a key scalability bottleneck.</li>
+          <li>Cut memory usage by 35% by restructuring the I/O path to shrink per-I/O descriptors, with no loss of performance or observability.</li>
+          <li>Raised RDMA read coverage to ~95% by diagnosing and fixing defects across the RDMA I/O path, improving both latency and throughput.</li>
+          <li>Reduced tail latency of the elastic memory subsystem under dynamic workloads by eliminating cold-start behavior.</li>
+        </ul>
+      </div>
+    </div>
+    <div class="row">
+      <div class="row-when">Summer 2021</div>
+      <div>
+        <h3>Research Intern · Twitter, Caching Team</h3>
+        <p>Analyzed memory efficiency of timeline caches under high write throughput, then designed a solution that increased memory efficiency without losing hit rate; the work fed into my Ph.D. thesis.</p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="row-when">Summer 2020</div>
+      <div>
+        <h3>Software Engineer · Einblick.ai <span style="font-weight:400;color:var(--faint)">(acquired by Databricks)</span></h3>
+        <p>Doubled throughput of hash-aggregation queries by designing an Apache Arrow–based in-cache execution architecture for an OLAP engine.</p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="row-when">2017</div>
+      <div>
+        <h3>Research Intern · Hariri Institute for Computing, Boston University</h3>
+        <p>Built systems improving latency predictability in virtualized clouds; published TerrierTail, CTS, ppXen, and Yawn.</p>
       </div>
     </div>
   </div>
@@ -193,7 +234,7 @@ footer a:hover{color:var(--accent)}
   </div>
 </section>
 
-<section id="Selected Publications">
+<section id="publications">
   <div class="wrap">
     <h2>Publications</h2>
 
@@ -222,48 +263,24 @@ footer a:hover{color:var(--accent)}
       <h3><a href="https://ieeexplore.ieee.org/abstract/document/8338088">TerrierTail: Mitigating Tail Latency of Cloud Virtual Machines</a></h3>
       <p class="authors"><b>E. Asyabi</b>, S. A. SanaeeKohroudi, M. Sharifi, A. Bestavros</p>
     </div>
-</section>
-
-<section id="experience">
-  <div class="wrap">
-    <h2>Experience</h2>
-
-    <div class="row">
-      <div class="row-when">Mar 2023 – Present</div>
-      <div>
-        <h3>Senior Member of Technical Staff · Oracle, Exadata/Exascale Storage</h3>
-        <p>Design and optimization of the I/O path of Oracle's cloud-scale block storage: a Linux block driver bridging the kernel block layer with the distributed storage backend behind Oracle's cloud database offerings.</p>
-        <ul>
-          <li>Increased our driver throughput by 55% with Parallel Lock, a low-contention locking mechanism that replaced traditional locks on the hot IO path and removed a key scalability bottleneck.</li>
-          <li>Cut memory usage by 35% by restructuring the IO path to shrink per-IO descriptors, with no loss of performance or observability.</li>
-          <li>Raised RDMA read coverage to ~95% by diagnosing and fixing defects across the RDMA I/O path, improving both latency and throughput.</li>
-          <li>Reduced tail latency of the elastic memory subsystem under dynamic workloads by eliminating cold-start behavior.</li>
-        </ul>
-      </div>
+    <div class="pub">
+      <div class="venue">Future Generation Computer Systems · 2018</div>
+      <h3><a href="https://www.sciencedirect.com/science/article/pii/S0167739X17310555">ppXen: A Hypervisor CPU Scheduler for Mitigating Performance Variability in Virtualized Clouds</a></h3>
+      <p class="authors"><b>E. Asyabi</b>, M. Sharifi, A. Bestavros</p>
     </div>
-    <div class="row">
-      <div class="row-when">Summer 2021</div>
-      <div>
-        <h3>Research Intern · Twitter, Caching Team</h3>
-        <p>Analyzed memory efficiency of timeline caches under high write throughput, then designed a solution that increased memory efficiency without losing hit rate; the work fed into my Ph.D. thesis.</p>
-      </div>
+    <div class="pub">
+      <div class="venue">Cluster Computing · 2016</div>
+      <h3><a href="https://www.springerprofessional.de/en/kani-a-qos-aware-hypervisor-level-scheduler-for-cloud-computing-/11708426">Kani: A QoS-aware Hypervisor-level Scheduler for Cloud Computing Environments</a></h3>
+      <p class="authors"><b>E. Asyabi</b>, A. Azhdari, M. Dehsangi, M. G. Khan, M. Sharifi, S. V. Azhari</p>
     </div>
-    <div class="row">
-      <div class="row-when">Summer 2020</div>
-      <div>
-        <h3>Software Engineer · Einblick.ai <span style="font-weight:400;color:var(--faint)">(acquired by Databricks)</span></h3>
-        <p>Doubled throughput of hash-aggregation queries by designing an Apache Arrow–based in-cache execution architecture for an OLAP engine.</p>
-      </div>
-    </div>
-    <div class="row">
-      <div class="row-when">2017</div>
-      <div>
-        <h3>Research Intern · Hariri Institute for Computing, Boston University</h3>
-        <p>Built systems improving latency predictability in virtualized clouds; published TerrierTail, CTS, ppXen, and Yawn.</p>
-      </div>
+    <div class="pub">
+      <div class="venue">FiCloud '15</div>
+      <h3><a href="https://ieeexplore.ieee.org/document/7300825">cCluster: A Core Clustering Mechanism for Workload-Aware Virtual Machine Scheduling</a></h3>
+      <p class="authors">M. Dehsangi, <b>E. Asyabi</b>, M. Sharifi, S. V. Azhari</p>
     </div>
   </div>
 </section>
+
 
 <section id="talks">
   <div class="wrap">
@@ -383,6 +400,7 @@ footer a:hover{color:var(--accent)}
     <span><a href="https://www.linkedin.com/in/showan-esmail-asyabi-4777171b2/">LinkedIn</a> · <a href="https://twitter.com/easyAbi">Twitter</a> · <a href="https://www.instagram.com/easyabi_/">Instagram</a></span>
   </div>
 </footer>
+
 
 
 
