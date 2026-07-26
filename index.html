@@ -1,13 +1,13 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="UTF-8">
+<!-- saved from url=(0031)https://showanasyabi.github.io/ -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Showan Asyabi</title>
 <meta name="description" content="Showan Asyabi: systems engineer specializing in scheduling, performance, and resource efficiency at datacenter scale. Ph.D., Boston University. Senior Member of Technical Staff at Oracle, Exadata/Exascale Storage. Interested in inference routing and AI-stack resource efficiency.">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,300;0,6..72,400;0,6..72,500;1,6..72,300;1,6..72,400&family=Instrument+Sans:ital,wght@0,400;0,500;0,600;1,400&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com/">
+<link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="">
+<link href="./Showan Asyabi_files/css2" rel="stylesheet">
 <style>
 :root{
   --paper:#fcfbf9;
@@ -84,6 +84,7 @@ h3{font-size:16.5px;font-weight:600;letter-spacing:-.005em;line-height:1.45}
 .proj{margin-bottom:52px}
 .proj:last-child{margin-bottom:0}
 .proj h3{font-family:var(--serif);font-weight:500;font-size:21px;margin-bottom:12px}
+.proj .tag{font-family:var(--sans);font-size:11.5px;letter-spacing:.16em;text-transform:uppercase;color:var(--accent);font-weight:500;vertical-align:2px;margin-left:10px}
 .proj p{color:var(--soft)}
 
 /* rows */
@@ -122,15 +123,15 @@ footer a:hover{color:var(--accent)}
 
 <nav>
   <div class="wrap nav-inner">
-    <a class="brand" href="#top">Showan Asyabi</a>
+    <a class="brand" href="https://showanasyabi.github.io/#top">Showan Asyabi</a>
     <div class="nav-links">
-      <a href="#about">About</a>
-      <a href="#research">Research</a>
-      <a href="#publications">Publications</a>
-      <a href="#experience">Experience</a>
-      <a href="#talks">Talks</a>
-      <a href="#education">Education</a>
-      <a href="resume.pdf">Resume</a>
+      <a href="https://showanasyabi.github.io/#about">About</a>
+      <a href="https://showanasyabi.github.io/#research">Research</a>
+      <a href="https://showanasyabi.github.io/#publications">Publications</a>
+      <a href="https://showanasyabi.github.io/#experience">Experience</a>
+      <a href="https://showanasyabi.github.io/#talks">Talks</a>
+      <a href="https://showanasyabi.github.io/#education">Education</a>
+      <a href="https://showanasyabi.github.io/resume.pdf">Resume</a>
     </div>
   </div>
 </nav>
@@ -141,9 +142,9 @@ footer a:hover{color:var(--accent)}
     <h1>Showan Asyabi</h1>
     <p class="lede">For a decade I've worked on one problem in different costumes: <em>how to get more from expensive hardware without sacrificing quality of service</em>. CPU and VM schedulers, memory-efficient key-value stores, and now the IO path of the cloud-scale block storage behind Oracle Exadata.</p>
     <div class="header-links">
-      <a class="primary" href="resume.pdf">Download Resume</a>
+      <a class="primary" href="https://showanasyabi.github.io/resume.pdf">Download Resume</a>
       <span class="sep">·</span>
-      <a href="mailto:easyabi@bu.edu">easyabi@bu.edu</a>
+      <a href="mailto:showan.asyabi@gmail.com">showan.asyabi@gmail.com</a>
       <span class="sep">·</span>
       <a href="https://www.linkedin.com/in/showan-esmail-asyabi-4777171b2/">LinkedIn</a>
       <a href="https://twitter.com/easyAbi">Twitter</a>
@@ -155,13 +156,12 @@ footer a:hover{color:var(--accent)}
   <div class="wrap">
     <h2>About</h2>
     <div class="about-flex">
-      <img class="portrait" src="showan.jpeg" alt="Portrait of Showan Asyabi">
+      <img class="portrait" src="./Showan Asyabi_files/showan.jpeg" alt="Portrait of Showan Asyabi">
       <div class="about-text">
         <p>I'm a Senior Member of Technical Staff at Oracle, working on the IO path of the cloud-scale block storage behind Exadata. My day-to-day begins with a hard performance problem (memory efficiency, throughput, tail latency) and ends at its root cause. Sometimes fixing it takes a careful patch; sometimes it takes rethinking how we do I/O altogether.</p>
         <p>I completed my Ph.D. in Computer Science at Boston University in 2023, advised by Professor <a href="http://azer.bestavros.net/">Azer Bestavros</a>, with a thesis on <em>resource-efficient, performant in-memory key-value stores for at-scale datacenters</em>.</p>
-        <p>I've also grown interested in the AI stack: inference routing and the resource efficiency of GPUs and memory. It's familiar territory in new clothes: KV-cache management, request scheduling under latency SLOs, and memory under pressure are the same problems I've spent the past decade on.</p>
         <p class="interest-line"><b>Interests</b>: AI-stack resource efficiency (inference routing, GPUs, memory) · key-value stores &amp; caching · operating systems &amp; scheduling · stream processing</p>
-        <p class="offline">When I'm not working, I'm traveling, chasing down Boston's best tables, or playing every sport there is. Pro at none, enthusiastic at all.</p>
+        <p class="offline">When I'm not working, I'm traveling, hunting down Boston's best restaurants, or playing whatever sport is in season.</p>
       </div>
     </div>
   </div>
@@ -170,6 +170,11 @@ footer a:hover{color:var(--accent)}
 <section id="research">
   <div class="wrap">
     <h2>Research</h2>
+
+    <div class="proj">
+      <h3>Resource Efficiency for the AI Stack<span class="tag">Current research</span></h3>
+      <p>Lately I've been exploring the AI stack: inference routing and the resource efficiency of GPUs and memory. It's familiar territory in new clothes: KV-cache management, request scheduling under latency SLOs, and memory efficiency under pressure are the same problems I've spent the past decade on.</p>
+    </div>
 
     <div class="proj">
       <h3>In-Memory Key-Value Stores &amp; Caching</h3>
@@ -384,7 +389,7 @@ footer a:hover{color:var(--accent)}
   <div class="wrap">
     <h2>Get in touch</h2>
     <p>I'm always open to collaborations and interesting problems in systems.</p>
-    <a class="email" href="mailto:easyabi@bu.edu">easyabi@bu.edu</a>
+    <a class="email" href="mailto:showan.asyabi@gmail.com">showan.asyabi@gmail.com</a>
   </div>
 </div>
 
@@ -395,5 +400,6 @@ footer a:hover{color:var(--accent)}
   </div>
 </footer>
 
-</body>
-</html>
+
+
+</body></html>
