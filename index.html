@@ -177,9 +177,9 @@ footer a:hover{color:var(--accent)}
         <h3>Senior Member of Technical Staff · Oracle, Exadata/Exascale Storage</h3>
         <p>Design and optimization of the I/O path of Oracle's cloud-scale block storage: a Linux block driver bridging the kernel block layer with the distributed storage backend behind Oracle's cloud database offerings.</p>
         <ul>
-          <li>Increased our driver throughput by 55% with Parallel Lock, a low-contention locking mechanism that replaced traditional locks on the hot I/O path and removed a key scalability bottleneck.</li>
+          <li>Increased our driver throughput by 55% with  a  novel low-contention locking mechanism that replaced traditional locks on the hot I/O path and removed a key scalability bottleneck.</li>
           <li>Cut memory usage by 35% by restructuring the I/O path to shrink per-I/O descriptors, with no loss of performance or observability.</li>
-          <li>Raised RDMA read coverage to ~95% by diagnosing and fixing defects across the RDMA I/O path, improving both latency and throughput.</li>
+          <li>Expanded adoption of the RDMA read rate by diagnosing and resolving reliability and integration issues, improving latency and throughput.</li>
           <li>Reduced tail latency of the elastic memory subsystem under dynamic workloads by eliminating cold-start behavior.</li>
         </ul>
       </div>
@@ -188,7 +188,7 @@ footer a:hover{color:var(--accent)}
       <div class="row-when">Summer 2021</div>
       <div>
         <h3>Research Intern · Twitter, Caching Team</h3>
-        <p>Analyzed memory efficiency of timeline caches under high write throughput, then designed a solution that increased memory efficiency without losing hit rate; the work fed into my Ph.D. thesis.</p>
+        <p> Characterized timeline-cache workloads and designed a memory-efficient caching architecture capable of sustaining high write throughput without reducing hit rate. The work fed into my Ph.D. thesis.</p>
       </div>
     </div>
     <div class="row">
@@ -214,7 +214,7 @@ footer a:hover{color:var(--accent)}
 
     <div class="proj">
       <h3>Resource Efficiency for the AI Stack</h3>
-      <p>Lately I've been exploring the AI stack: inference routing and the resource efficiency of GPUs and memory. It's familiar territory in new clothes: KV-cache management, request scheduling under latency SLOs, and memory efficiency under pressure are the same problems I've spent the past decade on.</p>
+      <p> I’m currently investigating resource efficiency across the AI inference stack, particularly request routing and scheduling, KV-cache management, GPU utilization, and memory efficiency. </p>
     </div>
 
     <div class="proj">
